@@ -1,0 +1,11 @@
+fastapi==0.115.0
+uvicorn==0.30.6
+python-multipart==0.0.9
+pandas==2.2.2
+pydantic[dotenv]==2.9.2
+python-dotenv==1.0.1
+openai==1.51.0
+aiofiles==24.1.0
+pytest==8.3.3
+scikit-learn
+joblib

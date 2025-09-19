@@ -9,6 +9,10 @@ from scoring import score_lead
 
 app = FastAPI(title="Lead Scoring API", version="0.1")
 
+@app.get("/")
+async def root():
+    return {"message": "Lead Scoring API is running! Visit /docs for interactive API docs."}
+
 @app.post("/offer")
 async def post_offer(offer: Offer):
     storage.save_offer(offer)
